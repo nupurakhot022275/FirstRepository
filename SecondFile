@@ -3,3 +3,8 @@
 While swagger-core will introspect fields and setters/getters, it will also read and process JAXB annotations.
 The @ApiModelProperty allows controlling Swagger-specific definitions such as allowed values, and additional notes. 
 It also offers additional filtering properties in case you want to hide the property in certain scenarios.
+
+@SwaggerDefiniation
+The SwaggerDefinition annotation provides properties corresponding to many (but not all) top-level properties of the 
+Swagger object, allowing you to set these for your auto-generated definition. The annotation can be on any class scanned during the Swagger auto-configuration process,
+ i.e. it does not have to be on a JAX-RS API class but could just be on a marker/config interface, for example:
